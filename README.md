@@ -43,8 +43,7 @@ GET /resultado-corrida
         "Nome Super-herói": "Flash",
         "Quantidade de Voltas Completadas": 4,
         "Tempo Total de Prova": "00:08:16.086"
-    },
-    ...
+    }
 ]
 ```
 
@@ -55,3 +54,45 @@ GET /resultado-corrida
 - Além das estatísticas básicas, a API também pode fornecer informações adicionais, como a melhor volta de cada super-herói, a melhor volta da corrida e a velocidade média de cada super-herói durante toda a corrida.
 
 Esta é a documentação básica da API de Processamento de Log de Corrida de Super-Heróis. Ela fornece uma visão geral das rotas disponíveis, seus parâmetros e o formato das respostas esperadas.
+
+Aqui está a seção adicionada ao README para incluir a documentação da API adicional:
+
+---
+
+
+### Contagem de Elementos em um Vetor
+
+Esta API permite contar a ocorrência de cada elemento em um vetor e retorna a contagem em formato JSON.
+
+#### Endpoint
+
+```
+POST /contar-elementos
+```
+
+#### Parâmetros de Entrada
+
+- `vetor_a`: Lista de elementos a serem contados.
+
+#### Exemplo de Requisição
+
+```json
+{
+  "vetor_a": [1, 2, 3, 4, 1, 2, 3, 4, 1, 2, 3, 4]
+}
+```
+
+#### Exemplo de Resposta
+
+```json
+{
+  "1": 3,
+  "2": 3,
+  "3": 3,
+  "4": 3
+}
+```
+
+Caso haja algum elemento fora do intervalo esperado (0 a 15), a API retornará um erro indicando o problema.
+
+---
