@@ -4,7 +4,7 @@ Esta API processa um arquivo de log contendo informações sobre uma corrida de 
 
 ### Rotas
 
-#### `/processar_log/<arquivo>`
+#### `/resultado-corrida`
 
 - **Método:** GET
 - **Descrição:** Processa o arquivo de log fornecido e retorna as estatísticas da corrida em formato JSON.
